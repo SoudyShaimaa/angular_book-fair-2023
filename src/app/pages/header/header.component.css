@@ -1,0 +1,132 @@
+/*Direction */
+.mins-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.mins-logo::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #F5F6FD;
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.fair-round::before, .fair-round::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  right: 0;
+  background: #EAEBF4;
+}
+
+.fair-round::before {
+  top: 0;
+}
+
+.fair-round::after {
+  bottom: 0;
+}
+
+.fair-logo {
+  width: 67px;
+}
+
+@media (max-width: 767.98px) {
+  .fair-logo {
+    width: 55px;
+  }
+}
+
+.round-num::before, .round-num::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  left: 0;
+  background: #EAEBF4;
+}
+
+.round-num::before {
+  top: 0;
+}
+
+.round-num::after {
+  bottom: 0;
+}
+
+.round-num span {
+  color: #55584D;
+}
+
+.round-num p {
+  color: #C9774F;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchInput .btn-close {
+  top: -2rem;
+  left: -2rem;
+}
+
+@media (max-width: 575.98px) {
+  .searchInput .btn-close {
+    top: -1rem;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.count {
+  font-size: 0.75rem;
+  left: 50%;
+}
+
+.nav-desktop .list-unstyled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.0625rem;
+  color: #252A26;
+}
+
+.nav-desktop .list-unstyled a {
+  padding-block: 1rem;
+}
+
+.nav-icon {
+  width: 25px;
+  height: 2px;
+  background: #252A26;
+}
+
+.nav-icon::after, .nav-icon::before {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  right: 0;
+  position: absolute;
+  background: #252A26;
+}
+
+.nav-icon::after {
+  bottom: 8px;
+}
+
+.nav-icon::before {
+  top: 8px;
+}
+/*# sourceMappingURL=header.component.css.map */

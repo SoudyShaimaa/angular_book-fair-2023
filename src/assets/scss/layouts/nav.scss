@@ -1,0 +1,8 @@
+@import "../../bootstrap/scss/functions";
+@import "../../bootstrap/scss/variables";
+@import "../../bootstrap/scss/mixins";
+@import "../base/_customBootstrapVariables";
+/*Direction */
+// Override default value for $dir in directional.scss
+$dir: rtl;
+@import "../base/directional";

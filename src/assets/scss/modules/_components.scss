@@ -1,0 +1,243 @@
+@import "../../bootstrap/scss/functions";
+@import "../../bootstrap/scss/variables";
+@import "../../bootstrap/scss/mixins";
+
+// ICON Font
+@font-face {
+  font-family: "bookfairicons";
+  src: url("../icon/bookfairicons.eot");
+  src: url("../icon/bookfairicons.eot?#iefix") format("embedded-opentype"),
+    url("../icon/bookfairicons.woff") format("woff"),
+    url("../icon/bookfairicons.ttf") format("truetype"),
+    url("../icon/bookfairicons.svg#bookfairicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  overflow: hidden;
+  display: flex;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "bookfairicons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\47";
+}
+.icon-location:before {
+  content: "\48";
+}
+.icon-search:before {
+  content: "\49";
+}
+.icon-delete:before {
+  content: "\4a";
+}
+.icon-done:before {
+  content: "\4b";
+}
+.icon-calender:before {
+  content: "\4c";
+}
+.icon-time:before {
+  content: "\4d";
+}
+.icon-close:before {
+  content: "\4e";
+}
+.icon-save:before {
+  content: "\4f";
+}
+.icon-download:before {
+  content: "\50";
+}
+.icon-email:before {
+  content: "\51";
+}
+.icon-user:before {
+  content: "\52";
+}
+.icon-external:before {
+  content: "\53";
+}
+.icon-link:before {
+  content: "\54";
+}
+.icon-play:before {
+  content: "\55";
+}
+
+/****  floating-Lable style start ****/
+
+.floating-select {
+  padding: 1rem 0.75rem;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: 1px solid transparent;
+  height: calc(3.5rem + 2px);
+  option {
+    font-weight: 500;
+  }
+  @include if-rtl {
+    background-position: left 0.75rem center;
+  }
+  &:not([value=""]):valid,
+  &:focus {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+.floating-label-select {
+  label {
+    color: $black;
+    @include font-size(16px);
+    font-weight: 500;
+    position: absolute;
+    pointer-events: none;
+    #{$left}: 0;
+    top: 0;
+    padding: 1rem 0.75rem;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    height: 100%;
+    transform-origin: top right;
+  }
+}
+
+.floating-select:focus ~ label,
+.floating-select:not([value=""]):valid ~ label {
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+  opacity: 0.65;
+  @include if-rtl {
+    padding-right: 1.1rem;
+  }
+}
+
+/****  floating-Lable style end ****/
+
+//banners
+//970X90
+
+.banner-970 {
+  width: 970px;
+  height: 90px;
+  @include media-breakpoint-down(lg) {
+    width: 320px;
+    height: 100px;
+  }
+}
+.box-shadow {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f8f8fc;
+}
+
+//336x250
+.banner-336x250 {
+  width: 336px;
+  height: 250px;
+}
+.banner-300X100{
+  width: 300px;
+  height: 100px;
+}
+.banner-320X50{
+  width: 320px;
+  height: 50px;
+}
+.ad-160x600{
+  width: 160px;
+  height: 600px;
+}
+.tag {
+  padding-inline: 0.75rem;
+  padding-bottom: 0.625rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  &.filter {
+    &:hover {
+      border-color: $primary !important;
+    }
+  }
+  &.active {
+    border-color: $primary !important;
+    color: $primary !important;
+  }
+}
+//book list item
+.book-item {
+  width: 216px;
+  min-width: 216px;
+  .book-img-container {
+    background-color: #f0f1f9;
+    height: 312px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    .book-img {
+      z-index: 1;
+    }
+    .book-bg{
+      mix-blend-mode: normal;
+      filter: blur(10px);
+     
+    }
+  }
+  &:hover{
+    .book-img-container{
+      background-color: $secondary;
+    }  
+  }
+}
+
+.order--1{
+  @include media-breakpoint-down(md){
+    order: -1;
+
+  }
+}
+
+//tabs
+
+.nav-tabs{
+  .nav-link{
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    &.active,
+    &:hover{
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+}
+
+//btn group
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active {
+  background-color: #FCEEEC;
+  border-color: #F2DDDA;
+}
+.ticket-nav{
+    div{
+      @include media-breakpoint-up(md){
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        margin-bottom: 0.25rem !important;
+        a{
+          display: inline-block !important;
+        }
+      }
+    }
+  }

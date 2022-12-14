@@ -1,0 +1,63 @@
+<header>
+    <div class="container-fluid border-bottom">
+        <div class="row">
+            <div class="col pe-0">
+                <a class="logos d-inline-flex py-2">
+                    <button class="btn px-2 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+                        <span class="nav-icon d-block position-relative"></span>
+                    </button>
+                    <div class="pe-md-2 pe-1">
+                        <div class="mins-logo bg-light rounded-circle p-md-2 p-1 position-relative">
+                            <img src="../../../assets/img/ministry-logo.png" />
+                        </div>
+                    </div>
+                    <div class="position-relative p-md-1 border-start border-end d-flex fair-round md-1">
+                        <img src="../../../assets/img/logo.png" class="fair-logo mt-1 mt-md-0" />
+                        <div class="round-num ps-1">
+                            <div class="d-lg-block d-none">
+                                <span class="heading-font fw-bold">الدورة</span>
+                                <p class="mb-0 fs-2 lh-1">54</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-auto d-flex align-items-center pe-0">
+                <ul class="list-unstyled d-flex align-items-center mb-0 h-100">
+                    <li>
+                             <div class="dropdown">
+                            <a class="d-flex btn text-secondary align-items-center px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="icon-user fs-5 me-1"></i>
+                                <div class="d-sm-block d-none">Ahmed Ali</div>
+                            </a>
+                            <ul class="dropdown-menu pb-0 overflow-hidden">
+                              <li><a class="dropdown-item py-2 border-bottom" href="#">الملف الشخصي</a></li>
+                              <li><a class="dropdown-item py-2 border-bottom" href="#">التذكرة</a></li>
+                              <li><a class="dropdown-item py-2 border-bottom " href="#">تسجيل خروج</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                    <li class="h-100 bg-light d-flex align-items-center text-secondary px-3">
+                        <i class="icon-cart fs-5"></i>
+                        <div>
+                            <span class="d-none d-md-inline-block">سلة التسوق</span>
+                            (<span>1</span> تذكرة)
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <app-nav-links class="offcanvas-nav-links ticket-nav"></app-nav-links>
+
+        </div>
+      </div>
+</header>

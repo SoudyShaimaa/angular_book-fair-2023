@@ -1,0 +1,197 @@
+.hero-bg {
+  z-index: -1;
+}
+
+.fair-info .bg-secondary {
+  width: 62px;
+  height: 62px;
+}
+
+.sponsor-logo {
+  width: 62.23px;
+  height: 62.23px;
+}
+
+.GBAuthority {
+  width: 38px;
+}
+
+.country-flag {
+  top: -22px;
+}
+
+.rounded-top-end {
+  border-start-end-radius: 30px !important;
+}
+
+.quote {
+  font-size: 2.5vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90.21deg, #383B34 4.59%, #DB2777 15.65%, #C51821 35%, #375E36 52.7%, #32A9CF 70.4%, #007ABF 86.43%, #2E3144 101.85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@media (max-width: 991.98px) {
+  .quote {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .quote {
+    font-size: 2.25rem;
+  }
+}
+
+.round-bg {
+  left: -35.5%;
+  z-index: -1;
+  width: 403px;
+}
+
+@media (max-width: 991.98px) {
+  .round-bg {
+    left: -42.5%;
+  }
+}
+
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  .round-bg {
+    left: -25.5%;
+  }
+}
+
+@media (max-width: 991.98px) and (max-width: 575.98px) {
+  .round-bg {
+    left: -39.5%;
+  }
+}
+
+.round-bg.top {
+  bottom: -1.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .round-bg.top {
+    bottom: 0;
+  }
+}
+
+.round-bg.bottom {
+  bottom: -90px;
+}
+
+@media (max-width: 575.98px) {
+  .round-bg.bottom {
+    bottom: -50px;
+  }
+}
+
+.blend-multiply {
+  mix-blend-mode: multiply;
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.map-icon {
+  width: 58px;
+  height: 58px;
+}
+
+@media (max-width: 575.98px) {
+  .map-icon {
+    width: 31px;
+    height: 31px;
+  }
+  .map-icon img {
+    width: 17px;
+  }
+}
+
+.fair-top-link .fair-top-img img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.fair-top-link:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.fair-top-link.bg-primary {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.fair-top-link.bg-primary:hover {
+  background: #252A26 !important;
+}
+
+@media (max-width: 575.98px) {
+  .fair-top-link h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.swiper-event-element {
+  width: 336px;
+}
+
+.swiper-event-element .fair-top-img {
+  height: 190px;
+}
+
+.bookstore-link img.position-absolute {
+  z-index: -1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.bookstore-link:hover img.position-absolute {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.sponsors-list img {
+  width: auto;
+  max-height: 46px;
+}
+
+.open-book-bg {
+  width: 822px;
+  top: -2rem;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 991.98px) {
+  .open-book-bg {
+    width: 500px;
+    top: 0;
+  }
+}
+
+.banner-zindex {
+  z-index: 2;
+}
+
+@media (max-width: 767.98px) {
+  .hero-img-container {
+    position: relative;
+  }
+  .hero-img-container img {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    left: -15%;
+    top: -110px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-img-container img {
+    top: -2rem;
+  }
+}
+/*# sourceMappingURL=home.component.css.map */

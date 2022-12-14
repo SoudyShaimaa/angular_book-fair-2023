@@ -1,0 +1,133 @@
+@import "../../../assets/bootstrap/scss/functions"
+@import "../../../assets/scss/base/_customBootstrapVariables"
+@import "../../../assets/bootstrap/scss/variables"
+@import "../../../assets/bootstrap/scss/mixins"
+
+.hero-bg
+    z-index: -1
+.fair-info
+    .bg-secondary
+        width: 62px
+        height: 62px
+
+.sponsor-logo
+    width: 62.23px
+    height: 62.23px
+
+.GBAuthority
+    width: 38px
+
+.country-flag
+    top: -22px
+
+.rounded-top-end
+    border-start-end-radius: 30px !important
+
+.quote
+    font-size: 2.5vw
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(90.21deg, #383B34 4.59%, #DB2777 15.65%, #C51821 35%, #375E36 52.7%, #32A9CF 70.4%, #007ABF 86.43%, #2E3144 101.85%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    @include media-breakpoint-down(lg)
+        font-size: 3.5vw
+    @include media-breakpoint-down(md)
+        font-size: 2.25rem
+    
+
+.round-bg
+    left: -35.5%
+    z-index: -1
+    width: 403px
+    @include media-breakpoint-down(lg)
+        left: -42.5%
+        @include media-breakpoint-down(md)
+            left: -25.5%
+        @include media-breakpoint-down(sm)
+            left: -39.5%
+    &.top
+        bottom: -1.5rem
+        @include media-breakpoint-down(sm)
+            bottom: 0
+    &.bottom
+        bottom: -90px
+        @include media-breakpoint-down(sm)
+            bottom: -50px
+
+.blend-multiply
+    mix-blend-mode: multiply
+    opacity: 0.05
+    z-index: 1
+
+.map-icon
+    width: 58px
+    height: 58px
+    @include media-breakpoint-down(sm)
+        width: 31px
+        height: 31px
+        img
+            width: 17px
+
+.fair-top-link
+    .fair-top-img
+        img
+            -webkit-transition: all 0.5s ease
+            transition: all 0.5s ease
+    &:hover
+        img
+            -webkit-transform: scale(1.05)
+            transform: scale(1.05)
+    &.bg-primary
+        -webkit-transition: all 0.5s ease
+        transition: all 0.5s ease
+        &:hover
+            background: $secondary !important
+
+    h3
+        @include media-breakpoint-down(sm)
+            font-size: 1.25rem
+
+.swiper-event-element
+    width: 336px
+    .fair-top-img
+        height: 190px
+
+.bookstore-link
+    img.position-absolute
+        z-index: -1
+        -webkit-transition: all 0.5s ease
+        transition: all 0.5s ease
+    &:hover
+        img.position-absolute
+            -webkit-transform: scale(1.05)
+            transform: scale(1.05)
+
+.sponsors-list
+    img
+        width: auto
+        max-height: 46px
+
+.open-book-bg
+    width: 822px
+    top: -2rem
+    mix-blend-mode: multiply
+    @include media-breakpoint-down(lg)
+        width: 500px
+        top: 0
+
+.banner-zindex
+    z-index: 2
+
+.hero-img-container
+    @include media-breakpoint-down(md)
+        position: relative
+        img
+            position: absolute
+            z-index: -1
+            width: 70%
+            left: -15%
+            top: -110px
+    @include media-breakpoint-down(sm)
+        img
+            top: -2rem

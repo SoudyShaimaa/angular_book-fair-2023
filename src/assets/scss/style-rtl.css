@@ -1,0 +1,340 @@
+/*Direction */
+/* BASE - Base styles , variables, mixins, ect*/
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body > main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.max-fluid {
+  max-width: 1440px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+ *  STYLE 3
+ */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #252A26;
+}
+
+.bg-primary-light {
+  background-color: rgba(209, 0, 44, 0.09);
+}
+
+ol ::marker {
+  color: #252A26 !important;
+}
+
+/*MODULES  - Individual site components */
+.heading-font {
+  font-family: 'Aref Ruqaa', serif;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.num-font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-check:active + .btn-outline-primary,
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(209, 0, 44, 0.1) !important;
+          box-shadow: 0 0 0 0.25rem rgba(209, 0, 44, 0.1) !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+}
+
+/*Direction */
+@font-face {
+  font-family: "bookfairicons";
+  src: url("../icon/bookfairicons.eot");
+  src: url("../icon/bookfairicons.eot?#iefix") format("embedded-opentype"), url("../icon/bookfairicons.woff") format("woff"), url("../icon/bookfairicons.ttf") format("truetype"), url("../icon/bookfairicons.svg#bookfairicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "bookfairicons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\47";
+}
+
+.icon-location:before {
+  content: "\48";
+}
+
+.icon-search:before {
+  content: "\49";
+}
+
+.icon-delete:before {
+  content: "\4a";
+}
+
+.icon-done:before {
+  content: "\4b";
+}
+
+.icon-calender:before {
+  content: "\4c";
+}
+
+.icon-time:before {
+  content: "\4d";
+}
+
+.icon-close:before {
+  content: "\4e";
+}
+
+.icon-save:before {
+  content: "\4f";
+}
+
+.icon-download:before {
+  content: "\50";
+}
+
+.icon-email:before {
+  content: "\51";
+}
+
+.icon-user:before {
+  content: "\52";
+}
+
+.icon-external:before {
+  content: "\53";
+}
+
+.icon-link:before {
+  content: "\54";
+}
+
+.icon-play:before {
+  content: "\55";
+}
+
+/****  floating-Lable style start ****/
+.floating-select {
+  padding: 1rem 0.75rem;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: 1px solid transparent;
+  height: calc(3.5rem + 2px);
+  background-position: left 0.75rem center;
+}
+
+.floating-select option {
+  font-weight: 500;
+}
+
+.floating-select:not([value=""]):valid, .floating-select:focus {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.floating-label-select label {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  top: 0;
+  padding: 1rem 0.75rem;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  height: 100%;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.floating-select:focus ~ label,
+.floating-select:not([value=""]):valid ~ label {
+  -webkit-transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+          transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+  opacity: 0.65;
+  padding-right: 1.1rem;
+}
+
+/****  floating-Lable style end ****/
+.banner-970 {
+  width: 970px;
+  height: 90px;
+}
+
+@media (max-width: 991.98px) {
+  .banner-970 {
+    width: 320px;
+    height: 100px;
+  }
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f8f8fc;
+}
+
+.banner-336x250 {
+  width: 336px;
+  height: 250px;
+}
+
+.banner-300X100 {
+  width: 300px;
+  height: 100px;
+}
+
+.banner-320X50 {
+  width: 320px;
+  height: 50px;
+}
+
+.ad-160x600 {
+  width: 160px;
+  height: 600px;
+}
+
+.tag {
+  padding-inline: 0.75rem;
+  padding-bottom: 0.625rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.tag.filter:hover {
+  border-color: #F34C35 !important;
+}
+
+.tag.active {
+  border-color: #F34C35 !important;
+  color: #F34C35 !important;
+}
+
+.book-item {
+  width: 216px;
+  min-width: 216px;
+}
+
+.book-item .book-img-container {
+  background-color: #f0f1f9;
+  height: 312px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.book-item .book-img-container .book-img {
+  z-index: 1;
+}
+
+.book-item .book-img-container .book-bg {
+  mix-blend-mode: normal;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.book-item:hover .book-img-container {
+  background-color: #252A26;
+}
+
+@media (max-width: 767.98px) {
+  .order--1 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.nav-tabs .nav-link {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active {
+  background-color: #FCEEEC;
+  border-color: #F2DDDA;
+}
+
+@media (min-width: 768px) {
+  .ticket-nav div {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  .ticket-nav div a {
+    display: inline-block !important;
+  }
+}
+/*# sourceMappingURL=style-rtl.css.map */

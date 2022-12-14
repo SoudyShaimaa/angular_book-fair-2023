@@ -1,0 +1,27 @@
+/*Direction */
+// Override default value for $dir in directional.scss
+$dir: rtl;
+
+// Import helpers from directional.scss
+@import "base/_directional.scss";
+@import 'base/_variables.scss';
+@import 'base/customBootstrapVariables';
+//bootstrap
+// scss-docs-start import-stack
+// Configuration
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+/* BASE - Base styles , variables, mixins, ect*/
+
+@import 'base/_mixins.scss';
+@import 'base/_normalize.scss';
+@import 'base/_base.scss';
+
+/*MODULES  - Individual site components */
+@import 'modules/_typography.scss';
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_sections.scss';
+@import 'modules/_components.scss';

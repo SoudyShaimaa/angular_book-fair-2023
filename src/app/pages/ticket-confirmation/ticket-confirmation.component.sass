@@ -1,0 +1,40 @@
+@import "../../../assets/bootstrap/scss/functions"
+@import "../../../assets/scss/base/_customBootstrapVariables"
+@import "../../../assets/bootstrap/scss/variables"
+@import "../../../assets/bootstrap/scss/mixins"
+
+.ticket-tabs
+    margin-top: -2rem
+
+.ticket-main
+    max-width: 455px
+    @include media-breakpoint-up(md)
+        min-width: 455px
+
+.ticket-ad
+    left: -176px
+    @include media-breakpoint-up(md)
+        position: absolute
+
+.related-main
+    a
+        transition: all 0.5s ease
+        border-end-end-radius: 0 !important
+        border-end-start-radius: 0 !important
+        @include media-breakpoint-down(sm)
+            font-size: 1rem !important
+        &:first-child
+            margin-inline-end: 1px
+        &:last-child
+            margin-inline-start: 1px
+        &:hover
+            background: $secondary !important
+            color: #ffffff !important
+
+.related-btn-icon
+    width: 58px
+    height: 58px
+    .map
+        width: 30px
+    .store
+        width: 32px

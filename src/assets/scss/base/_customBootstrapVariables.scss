@@ -1,0 +1,40 @@
+ //colors
+
+$font-family-base:           'Almarai', sans-serif !default;
+$body-color:                #646E80 !default;
+$gray-600: #666666 !default;
+$gray-100: #F5F6FD !default;
+$primary: #F34C35 !default;
+$secondary: #252A26 !default;
+
+//button
+$btn-padding-y:               1rem;
+$btn-padding-x:               1.5rem;
+$btn-font-size:               1.0625rem;
+$btn-line-height:             1;
+
+//link
+$link-hover-decoration:                   none !default;
+
+//modal
+$modal-content-border-radius:0.625rem !default;
+
+//borders
+$border-radius:               0.625rem !default;
+$border-radius-xl:            1.25rem !default;
+$border-color:                #EAEBF4;
+
+// //accordion
+$accordion-icon-width:                    1rem;
+
+//tabs
+$nav-link-color:$secondary !default;
+$nav-link-hover-color:$primary;
+$nav-tabs-border-radius:            0;
+$nav-tabs-link-hover-border-color:$primary;
+$nav-tabs-link-active-color: $secondary !default;
+$nav-tabs-link-active-border-color:$primary;
+
+//form
+$input-color:$secondary
+

@@ -1,0 +1,92 @@
+<header>
+    <app-header-banner></app-header-banner>
+    <div class="container-fluid py-2 border-bottom">
+        <div class="row">
+            <div class="col pe-0">
+                <a class="logos d-inline-flex">
+                    <div class="pe-md-2 pe-1">
+                        <div class="mins-logo bg-light rounded-circle p-md-2 p-1 position-relative">
+                            <img src="../../../assets/img/ministry-logo.png" />
+                        </div>
+                    </div>
+                    <div class="position-relative p-md-1 border-start border-end d-flex fair-round md-1">
+                        <img src="../../../assets/img/logo.png" class="fair-logo mt-1 mt-md-0" />
+                        <div class="round-num ps-1">
+                            <div class="d-lg-block d-none">
+                                <span class="heading-font fw-bold">الدورة</span>
+                                <p class="mb-0 fs-2 lh-1">54</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+                <ul class="list-unstyled d-flex align-items-center mb-0">
+                    <li>
+                        <a class="text-secondary px-3 py-2 d-block" data-bs-toggle="modal"
+                            data-bs-target="#searchInput">
+                            <i class="icon-search fs-4 mt-sm-1"></i>
+                        </a>
+                    </li>
+                    <li >
+                        <a class="text-secondary px-3 py-2 d-block position-relative">
+                            <i class="icon-cart fs-4 mt-sm-1"></i>
+                            <!--  add cart items count here
+                                <span class="count position-absolute top-0 bg-primary text-white rounded-circle py-1 px-2 lh-1 fw-bold">
+                                1
+                            </span> 
+                            -->
+                        </a>
+                    </li>
+                    <li class="d-sm-block d-none">
+                        <a class="btn text-secondary px-3">تسجيل دخول</a>
+                        <!-- if user loged in
+                             <div class="dropdown">
+                            <a class="d-flex btn text-secondary align-items-center px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="icon-user fs-5 me-1"></i>
+                                <div>Ahmed Ali</div>
+                            </a>
+                            <ul class="dropdown-menu pb-0 overflow-hidden">
+                              <li><a class="dropdown-item py-2 border-bottom" href="#">الملف الشخصي</a></li>
+                              <li><a class="dropdown-item py-2 border-bottom" href="#">التذكرة</a></li>
+                              <li><a class="dropdown-item py-2 border-bottom " href="#">تسجيل خروج</a></li>
+                            </ul>
+                          </div> -->
+                    </li>
+                    <li class="d-sm-block d-none">
+                        <a class="btn btn-primary text-white">شراء التذكرة</a>
+                    </li>
+                    <li class="d-block d-lg-none">
+                        <button class="btn px-3 pe-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
+                            <span class="nav-icon d-block position-relative"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+</header>
+<!-- Modal -->
+<div class="modal fade searchInput" id="searchInput" tabindex="-1" aria-labelledby="searchInput" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content border-0 bg-transparent">
+            <div class="modal-body p-0 mt-4 pt-4 pt-sm-0">
+                <button type="button" class="btn-close position-absolute bg-white p-2 rounded-circle"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="input-group">
+                    <div class="form-floating is-invalid">
+                        <input type="search" class="form-control" id="floatingInputSearch" placeholder="Username"
+                            required>
+                        <label for="floatingInputGroup2">إبحث عن الكتاب</label>
+                    </div>
+                    <button class="btn btn-primary text-white px-3" data-bs-dismiss="modal">
+                        <i class="icon-search fs-4"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

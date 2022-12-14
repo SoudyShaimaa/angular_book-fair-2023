@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "header-banner.component.sass"
+    ],
+    "names": [],
+    "file": "header-banner.component.css"
+}

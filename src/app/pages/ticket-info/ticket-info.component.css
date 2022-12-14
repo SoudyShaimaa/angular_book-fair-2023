@@ -1,0 +1,23 @@
+.ticket-tabs {
+  margin-top: -2rem;
+}
+
+.ticket-selector {
+  height: 48px;
+  width: 95px;
+}
+
+.ticket-main {
+  max-width: 455px;
+}
+
+.ticket-ad {
+  left: -176px;
+}
+
+@media (min-width: 768px) {
+  .ticket-ad {
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=ticket-info.component.css.map */

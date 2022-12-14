@@ -1,0 +1,111 @@
+@import "../../../assets/bootstrap/scss/functions"
+@import "../../../assets/scss/base/_customBootstrapVariables"
+@import "../../../assets/bootstrap/scss/variables"
+@import "../../../assets/bootstrap/scss/mixins"
+/*Direction */
+// Override default value for $dir in directional.scss
+// $dir: rtl
+// @import "../../../assets/scss/base/directional"
+
+.mins-logo
+    img
+        @include media-breakpoint-down(md)
+        width: 50px
+        height: 50px
+    &::after
+        content: " "
+        width: 0
+        height: 0
+        position: absolute
+        border-top: 8px solid transparent
+        border-bottom: 8px solid transparent
+        border-right: 8px solid $gray-100
+        position: absolute
+        left: -6px
+        top: 50%
+        margin-top: -10px
+
+.fair-round
+    &::before,
+    &::after
+        content: " "
+        position: absolute
+        width: 10px
+        height: 1px
+        right: 0
+        background: $border-color
+
+    &::before
+        top: 0
+
+    &::after
+        bottom: 0
+
+.fair-logo
+    width: 67px
+    @include media-breakpoint-down(md)
+        width: 55px
+
+.round-num
+    &::before,
+    &::after
+        content: " "
+        position: absolute
+        width: 10px
+        height: 1px
+        left: 0
+        background: $border-color
+
+    &::before
+        top: 0
+
+    &::after
+        bottom: 0
+
+    span
+        color: #55584D
+
+    p
+        color: #C9774F
+        font-family: Arial, Helvetica, sans-serif
+
+.searchInput
+    .btn-close
+        top: -2rem
+        left: -2rem
+        @include media-breakpoint-down(sm)
+            top: -1rem
+            left: 0
+            opacity: 1
+.count
+    @include font-size(12px)
+    left: 50%
+
+.nav-desktop
+    .list-unstyled
+        display: flex
+        align-items: center
+        justify-content: center
+        @include font-size(17px)
+        color: $secondary
+        a
+            padding-block: 1rem
+
+.nav-icon
+    width: 25px
+    height: 2px
+    background: $secondary
+    &::after, &::before
+        content: " "
+        width: 100%
+        height: 2px
+        right: 0
+        position: absolute
+        background: $secondary
+
+    &::after
+        bottom: 8px
+
+    &::before
+        top: 8px
+        

@@ -1,0 +1,65 @@
+.ticket-tabs {
+  margin-top: -2rem;
+}
+
+.ticket-main {
+  max-width: 455px;
+}
+
+@media (min-width: 768px) {
+  .ticket-main {
+    min-width: 455px;
+  }
+}
+
+.ticket-ad {
+  left: -176px;
+}
+
+@media (min-width: 768px) {
+  .ticket-ad {
+    position: absolute;
+  }
+}
+
+.related-main a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-end-end-radius: 0 !important;
+  border-end-start-radius: 0 !important;
+}
+
+@media (max-width: 575.98px) {
+  .related-main a {
+    font-size: 1rem !important;
+  }
+}
+
+.related-main a:first-child {
+  -webkit-margin-end: 1px;
+          margin-inline-end: 1px;
+}
+
+.related-main a:last-child {
+  -webkit-margin-start: 1px;
+          margin-inline-start: 1px;
+}
+
+.related-main a:hover {
+  background: #252A26 !important;
+  color: #ffffff !important;
+}
+
+.related-btn-icon {
+  width: 58px;
+  height: 58px;
+}
+
+.related-btn-icon .map {
+  width: 30px;
+}
+
+.related-btn-icon .store {
+  width: 32px;
+}
+/*# sourceMappingURL=ticket-confirmation.component.css.map */

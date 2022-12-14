@@ -1,0 +1,66 @@
+.ticket-tabs {
+  margin-top: -2rem;
+}
+
+.ticket-main {
+  max-width: 455px;
+}
+
+@media (min-width: 768px) {
+  .ticket-main {
+    min-width: 455px;
+  }
+}
+
+.ticket-ad {
+  left: -176px;
+}
+
+@media (min-width: 768px) {
+  .ticket-ad {
+    position: absolute;
+  }
+}
+
+.btn-check {
+  clip: auto;
+}
+
+.meeza {
+  max-width: 50px;
+}
+
+.masary {
+  max-width: 65px;
+}
+
+@media (max-width: 575.98px) {
+  .masary {
+    max-width: 45px;
+  }
+}
+
+.fawry {
+  max-width: 78px;
+}
+
+@media (max-width: 575.98px) {
+  .fawry {
+    max-width: 58px;
+  }
+}
+
+.aman {
+  max-width: 53px;
+}
+
+@media (max-width: 575.98px) {
+  .aman {
+    max-width: 33px;
+  }
+}
+
+.ticket-img {
+  max-width: 300px;
+}
+/*# sourceMappingURL=ticket-payment.component.css.map */
