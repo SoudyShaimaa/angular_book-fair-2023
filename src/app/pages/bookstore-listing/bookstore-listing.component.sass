@@ -1,0 +1,57 @@
+@import "../../../assets/bootstrap/scss/functions"
+@import "../../../assets/scss/base/_customBootstrapVariables"
+@import "../../../assets/bootstrap/scss/variables"
+@import "../../../assets/bootstrap/scss/mixins"
+  
+.filter
+    .search
+        @include media-breakpoint-up(md)
+            max-width: 210px
+
+        .form-control
+            &:not(focus)
+                border-color: $border-color
+            &:focus ~ button
+                color: $primary !important
+
+.btn-close
+    box-sizing: border-box
+
+.alphabit
+    .tag
+        &:hover
+            background: $light
+
+        &.active
+            background: $secondary !important
+            color: $white !important
+            font-weight: normal !important
+
+.store-img
+    width: 85px
+    height: 85px
+    @include media-breakpoint-down(md)
+        width: 55px
+        min-width: 55px
+        height: 55px
+
+.save-btn  
+    z-index: 9   
+    &:hover
+        border: 1px solid $primary
+
+.facebook-color
+    color: #1877F2  
+
+.twitter-color
+    color: #1D9BF0  
+
+.location
+    @include media-breakpoint-down(md)
+        padding-inline-start: 60px
+
+.store-main
+    @include media-breakpoint-down(md)
+        padding-inline-end: 3rem
+        h5
+            font-size: 1.2rem

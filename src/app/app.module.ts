@@ -14,6 +14,9 @@ import { TicketPaymentComponent } from './pages/ticket-payment/ticket-payment.co
 import { TicketConfirmationComponent } from './pages/ticket-confirmation/ticket-confirmation.component';
 import { TicketHeaderComponent } from './pages/ticket-header/ticket-header.component';
 import { HeaderBannerComponent } from './pages/header-banner/header-banner.component';
+import { SigninComponent } from './pages/signin/signin.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { BookstoreListingComponent } from './pages/bookstore-listing/bookstore-listing.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { HeaderBannerComponent } from './pages/header-banner/header-banner.compo
     TicketConfirmationComponent,
     TicketHeaderComponent,
     HeaderBannerComponent,
+    SigninComponent,
+    SignupComponent,
+    BookstoreListingComponent,
     
   ],
   imports: [

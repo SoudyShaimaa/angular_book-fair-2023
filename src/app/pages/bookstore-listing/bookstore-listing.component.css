@@ -1,0 +1,75 @@
+@media (min-width: 768px) {
+  .filter .search {
+    max-width: 210px;
+  }
+}
+
+.filter .search .form-control:not(focus) {
+  border-color: #EAEBF4;
+}
+
+.filter .search .form-control:focus ~ button {
+  color: #F34C35 !important;
+}
+
+.btn-close {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.alphabit .tag:hover {
+  background: #F5F6FD;
+}
+
+.alphabit .tag.active {
+  background: #252A26 !important;
+  color: #fff !important;
+  font-weight: normal !important;
+}
+
+.store-img {
+  width: 85px;
+  height: 85px;
+}
+
+@media (max-width: 767.98px) {
+  .store-img {
+    width: 55px;
+    min-width: 55px;
+    height: 55px;
+  }
+}
+
+.save-btn {
+  z-index: 9;
+}
+
+.save-btn:hover {
+  border: 1px solid #F34C35;
+}
+
+.facebook-color {
+  color: #1877F2;
+}
+
+.twitter-color {
+  color: #1D9BF0;
+}
+
+@media (max-width: 767.98px) {
+  .location {
+    -webkit-padding-start: 60px;
+            padding-inline-start: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .store-main {
+    -webkit-padding-end: 3rem;
+            padding-inline-end: 3rem;
+  }
+  .store-main h5 {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=bookstore-listing.component.css.map */

@@ -1,0 +1,682 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col pt-3 mt-2">
+            <h3 class="heading-font display-6 fw-bold mb-4 text-secondary text-start lh-1">
+                <span>1800</span> دار نشر
+            </h3>
+            <div class="filter d-flex mb-2">
+                <div class="position-relative search me-3 flex-fill">
+                    <input type="text" class="form-control rounded-4 py-3 px-3 lh-1" placeholder="اكتب إسم دور النشر"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button
+                        class="border-0 bg-white position-absolute top-50 end-0 translate-middle-y me-2 text-secondary"
+                        type="button" id="button-addon2">
+                        <i class="icon-search fs-5"></i>
+                    </button>
+                </div>
+                <div class="dropdown me-3 d-none d-md-inline-block">
+                    <button type="button" class="btn px-3 border rounded-4 dropdown-toggle " data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="outside">
+                        إختر القاعة
+                    </button>
+                    <!-- Case filter selected
+                    <button type="button" class="btn px-3 border rounded-4 dropdown-toggle text-secondary border-secondary" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        إختر القاعة <span class="bg-secondary rounded-circle lh-1 px-2 py-1 text-white">1</span>
+                    </button> -->
+                    <form class="dropdown-menu px-3 py-0">
+                        <div class="form-check py-2 my-1">
+                            <input type="checkbox" class="form-check-input" id="hall1">
+                            <label class="form-check-label text-secondary" for="hall1">
+                                قــــــاعة 1
+                            </label>
+                        </div>
+                        <div class="form-check py-2 my-1 border-top">
+                            <input type="checkbox" class="form-check-input" id="hall2">
+                            <label class="form-check-label text-secondary" for="hall2">
+                                قــــــاعة 2
+                            </label>
+                        </div>
+                        <div class="form-check py-2 my-1 border-top">
+                            <input type="checkbox" class="form-check-input" id="hall3">
+                            <label class="form-check-label text-secondary" for="hall3">
+                                قــــــاعة 3
+                            </label>
+                        </div>
+                        <div class="form-check py-2 my-1 border-top">
+                            <input type="checkbox" class="form-check-input" id="hall4">
+                            <label class="form-check-label text-secondary" for="hall4">
+                                قــــــاعة 4
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="dropdown me-3 d-none d-md-inline-block">
+                    <button type="button" class="btn px-3 border rounded-4 dropdown-toggle " data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-auto-close="outside">
+                        إختر التصنيفات
+                    </button>
+                    <!-- Case filter selected
+                    <button type="button" class="btn px-3 border rounded-4 dropdown-toggle text-secondary border-secondary" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        إختر التصنيفات <span class="bg-secondary rounded-circle lh-1 px-2 py-1 text-white">1</span>
+                    </button> -->
+                    <form class="dropdown-menu px-3 py-0">
+                        <div class="form-check py-2 my-1">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                            <label class="form-check-label text-secondary" for="dropdownCheck2">
+                                ثقافه وادب
+                            </label>
+                        </div>
+                        <div class="form-check py-2 my-1 border-top">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck3">
+                            <label class="form-check-label text-secondary" for="dropdownCheck3">
+                                علوم
+                            </label>
+                        </div>
+                        <div class="form-check py-2 my-1 border-top">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck4">
+                            <label class="form-check-label text-secondary" for="dropdownCheck4">
+                                كتب مترجمه
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <a class="btn btn-outline-light border rounded-4 px-3 py-2 d-flex align-items-center d-md-none"
+                    data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="icon-filter fs-5 text-secondary"></i>
+                </a>
+
+                <!-- FILTER SELECTED
+                <a class="btn btn-outline-light border rounded-4 px-3 py-2 d-flex align-items-center "
+                    data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <span class="d-inline-block bg-secondary rounded-circle py-1 px-2 text-white">1</span>
+                    <i class="icon-filter fs-5 text-secondary"></i>
+                </a>
+                 END FILTER SELECTED -->
+
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">المرشحات</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body position-relative pb-5">
+                        <div class="accordion pb-5">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        القاعة
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="form-check py-2 my-1">
+                                            <input type="checkbox" class="form-check-input" id="hallAcc1">
+                                            <label class="form-check-label text-secondary" for="hallAcc1">
+                                                قــــــاعة 1
+                                            </label>
+                                        </div>
+                                        <div class="form-check py-2 my-1 border-top">
+                                            <input type="checkbox" class="form-check-input" id="hallAcc2">
+                                            <label class="form-check-label text-secondary" for="hallAcc2">
+                                                قــــــاعة 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check py-2 my-1 border-top">
+                                            <input type="checkbox" class="form-check-input" id="hallAcc3">
+                                            <label class="form-check-label text-secondary" for="hallAcc3">
+                                                قــــــاعة 3
+                                            </label>
+                                        </div>
+                                        <div class="form-check py-2 my-1 border-top">
+                                            <input type="checkbox" class="form-check-input" id="hallAcc4">
+                                            <label class="form-check-label text-secondary" for="hallAcc4">
+                                                قــــــاعة 4
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        التصنيفات
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="form-check py-2 my-1">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheckacc2">
+                                            <label class="form-check-label text-secondary" for="dropdownCheckacc2">
+                                                ثقافه وادب
+                                            </label>
+                                        </div>
+                                        <div class="form-check py-2 my-1 border-top">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheckacc3">
+                                            <label class="form-check-label text-secondary" for="dropdownCheckacc3">
+                                                علوم
+                                            </label>
+                                        </div>
+                                        <div class="form-check py-2 my-1 border-top">
+                                            <input type="checkbox" class="form-check-input" id="dropdownCheckacc4">
+                                            <label class="form-check-label text-secondary" for="dropdownCheckacc4">
+                                                كتب مترجمه
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex py-3 position-absolute bottom-0 border-top bg-white w-100 start-0">
+                            <a class="btn btn-secondary me-1 ms-3 flex-fill">
+                                أظهر النتائج
+                            </a>
+                            <a class="btn text-secondary ms-1 me-3 flex-fill" data-bs-dismiss="offcanvas">
+                                إلغاء
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SELECTED FILTERS
+            <ul class="list-unstyled d-flex pt-3 mb-3 align-items-center border-bottom pb-2">
+                <li class="me-2 text-secondary">
+                    <small>مرشحات مختارة</small>
+                </li>
+                <li class="me-2">
+                    <a class="tag rounded-5 border bg-white pt-2 lh-1 text-body filter d-block active">
+                        ثقافه وادب <button type="button" class="btn-close fs-6" aria-label="Close"></button>
+                    </a>
+                </li>
+                <li class="border-start">
+                    <a class="btn-link px-2 py-1 text-secondary">
+                       <small>
+                        حذف الكل
+                       </small> 
+                    </a>
+                </li>
+                
+            </ul> -->
+            <div class="d-flex table-responsive px-2 pt-2 pb-3 border-bottom mb-3 alphabit">
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary d-block fw-bold active">
+                        الكل
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        أ
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ب
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ت
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ث
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ج
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ح
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        خ
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        د
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ذ
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ر
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ز
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        س
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ش
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ص
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ض
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ط
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ظ
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ع
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        غ
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ف
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ق
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ك
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ل
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        م
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ن
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        هـ
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        و
+                    </a>
+                </div>
+                <div class="px-1">
+                    <a class="tag rounded-5 pt-2 text-secondary fw-bold d-block">
+                        ي
+                    </a>
+                </div>
+            </div>
+            <!-- FEATURED STORES -->
+            <div class="pb-3">
+                <!-- TITLE -->
+                <div class="row mb-1 align-items-center">
+                    <div class="col-md-6">
+                        <div class="tag rounded-5 border bg-white pt-2 lh-1 filter d-inline-block active">دور نشر
+                            مُقترحة لك</div>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="d-none d-md-block">
+                            الموقع في المعرض
+                        </span>
+                    </div>
+                </div>
+
+                <!-- FEATURED BOOK STORE LIST -->
+
+                <div class="bg-light border-bottom p-2">
+                    <div class="position-relative store-main">
+                        <a class="btn text-primary position-absolute top-50 end-0 translate-middle-y save-btn px-3"  data-bs-toggle="modal" data-bs-target="#confirmModal">
+                            <i class="icon-save fs-5"></i>
+                        </a>
+                        <a class="d-block" data-bs-toggle="collapse" href="#collapseStore1" role="button"
+                            aria-expanded="false" aria-controls="collapseStore1">
+                            <div class="row mb-1 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="store-img border rounded-circle p-1 bg-white me-2">
+                                            <img class="rounded-circle"
+                                                src="../../../assets/img/bookstore/image 412137.png">
+                                        </div>
+                                        <div>
+                                            <h5 class="text-secondary">الهيئة المصرية العامة للكتاب</h5>
+                                            <p class="mb-md-0 text-body mb-2">6519 كتاب - 2306 كاتب</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="text-secondary mb-0 location"> قاعه 1 بلوك 3C , قاعه 3 بلوك 30D </h5>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseStore1">
+                        <div class="p-3">
+                            ...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-light border-bottom p-2">
+                    <div class="position-relative store-main">
+                        <a class="btn text-primary position-absolute top-50 end-0 translate-middle-y save-btn px-3">
+                            <i class="icon-save fs-5"></i>
+                        </a>
+                        <a class="d-block" data-bs-toggle="collapse" href="#collapseStore2" role="button"
+                            aria-expanded="false" aria-controls="collapseStore2">
+                            <div class="row mb-1 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="store-img border rounded-circle p-1 bg-white me-2">
+                                            <img class="rounded-circle"
+                                                src="../../../assets/img/bookstore/image 412137-1.png">
+                                        </div>
+                                        <div>
+                                            <h5 class="text-secondary">الشروق للمكتبات</h5>
+                                            <p class="mb-md-0 text-body mb-2">1181 كتاب - 417 كاتب</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="text-secondary mb-0 location"> قاعه2 بلوك 3C </h5>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseStore2">
+                        <div class="p-3 text-secondary">
+                            <p class=" lh-lg">
+                                شركة «الشروق للمكتبات» هى إحدى شركات مجموعة الشروق، وهى تمثل الامتداد الطبيعي لدار
+                                الشروق التي تأسست عام 1968 وتحولت على مر السنين من كونها ناشرًا مستقلًّا لتصبح دار نشر
+                                رائدة فى منطقة الشرق الأوسط رسَّخت مكانتها بما لديها من قناعات قوية بقِيَم نشر الثقافة
+                                والعلم وأثر ذلك على تقدم ورُقي المجتمع، وباحتفاظها بحقوق نشر أكبر الكُتاب والمؤلفين في
+                                المنطقة العربية، والذي حاز العديد منهم أهم الجوائز العربية والعالمية.
+                            </p>
+                            <b>عناوين فروع مكتبات الشروق</b>
+                            <ul class="list-unstyled pt-2 list-style mb-2 ">
+                                <li class="pb-2">سيتي ستارز: سيتى ستارز مول - الدور الأول - مدخل 7</li>
+                                <li class="pb-2">طلعت حرب : 1 ميدان طلعت حرب</li>
+                                <li class="pb-2">المهندسين: ٣ شارع عبد الحميد لطفي، متفرع من</li>
+                                <li class="pb-2">كايرو فستيفال سيتي : كايرو فيستيفال سيتى مول - التجمع</li>
+                            </ul>
+                            <div class="d-flex flex-wrap pb-3">
+                                <a target="_blank"
+                                    class="d-inline-flex bg-white text-secondary px-3 py-2 lh-1 border rounded-4 align-items-center mb-2 mb-md-0 me-md-2 ltr">
+                                    <i class="icon-link fs-5 ms-2"></i> www.shoroukbookstores.com
+                                </a>
+                                <a target="_blank"
+                                    class="facebook-color d-inline-flex bg-white px-3 py-2 lh-1 border rounded-4 align-items-center mb-2 mb-md-0 me-md-2 ltr">
+                                    <img class="ms-1" src="../../../assets/img/Facebook.svg">
+                                    /shoroukbookstore
+                                </a>
+                                <a target="_blank"
+                                    class="twitter-color d-inline-flex bg-white px-3 py-2 lh-1 border rounded-4 align-items-center mb-2 mb-md-0 me-md-2 ltr">
+                                    <img class="ms-1" src="../../../assets/img/twitter.svg">
+                                    /shoroukbookstore
+                                </a>
+                            </div>
+                            <a class="d-inline-block btn btn-primary text-white">
+                                المزيد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END FEATURED STORES -->
+            </div>
+            <!-- FEATURED STORES -->
+
+            <!-- OTHER STORES -->
+            <div class="pb-4">
+                <!-- TITLE -->
+                <div class="row mb-1 align-items-center">
+                    <div class="col-md-6">
+                        دور النشر
+                    </div>
+                    <div class="col-md-6">
+                        <span class="d-none d-md-block">
+                            الموقع في المعرض
+                        </span>
+                    </div>
+                </div>
+
+                <!-- BOOK STORE LIST -->
+                <div class="border-bottom p-2">
+                    <div class="position-relative store-main">
+                        <a class="btn text-primary position-absolute top-50 end-0 translate-middle-y save-btn px-3">
+                            <i class="icon-save fs-5"></i>
+                        </a>
+                        <a class="d-block" data-bs-toggle="collapse" href="#collapseStore3" role="button"
+                            aria-expanded="false" aria-controls="collapseStore3">
+                            <div class="row mb-1 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="store-img border rounded-circle p-1 bg-white me-2">
+                                            <img class="rounded-circle"
+                                                src="../../../assets/img/bookstore/image 412137-2.png">
+                                        </div>
+                                        <div>
+                                            <h5 class="text-secondary">دارك للنشر والتوزيع</h5>
+                                            <p class="mb-md-0 text-body mb-2">228 كتاب - 83 كاتب</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="text-secondary mb-0 location"> قاعه2 بلوك 3C </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseStore3">
+                        <div class="p-3">
+                            ...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-bottom p-2">
+                    <div class="position-relative store-main">
+                        <a class="btn text-primary position-absolute top-50 end-0 translate-middle-y save-btn px-3">
+                            <i class="icon-save fs-5"></i>
+                        </a>
+                        <a class="d-block" data-bs-toggle="collapse" href="#collapseStore4" role="button"
+                            aria-expanded="false" aria-controls="collapseStore4">
+                            <div class="row mb-1 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="store-img border rounded-circle p-1 bg-white me-2">
+                                            <img class="rounded-circle"
+                                                src="../../../assets/img/bookstore/image 412137-3.png">
+                                        </div>
+                                        <div>
+                                            <h5 class="text-secondary">الدار الدولية للاستثمارات الثقافية</h5>
+                                            <p class="mb-md-0 text-body mb-2">136 كتاب - 79 كاتب</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="text-secondary mb-0 location"> قاعه 1 بلوك 35B </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseStore4">
+                        <div class="p-3">
+                            ...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-bottom p-2">
+                    <div class="position-relative store-main">
+                        <a class="btn text-primary position-absolute top-50 end-0 translate-middle-y save-btn px-3">
+                            <i class="icon-save fs-5"></i>
+                        </a>
+                        <a class="d-block" data-bs-toggle="collapse" href="#collapseStore5" role="button"
+                            aria-expanded="false" aria-controls="collapseStore5">
+                            <div class="row mb-1 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="store-img border rounded-circle p-1 bg-white me-2">
+                                            <img class="rounded-circle"
+                                                src="../../../assets/img/bookstore/image 412137-4.png">
+                                        </div>
+                                        <div>
+                                            <h5 class="text-secondary">نماء للبحوث والدراسات</h5>
+                                            <p class="mb-md-0 text-body mb-2">149 كتاب - 67 كاتب</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="text-secondary mb-0 location"> قاعه2 بلوك 3C </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseStore5">
+                        <div class="p-3">
+                            ...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-bottom p-2">
+                    <div class="position-relative store-main">
+                        <a class="btn text-primary position-absolute top-50 end-0 translate-middle-y save-btn px-3">
+                            <i class="icon-save fs-5"></i>
+                        </a>
+                        <a class="d-block" data-bs-toggle="collapse" href="#collapseStore7" role="button"
+                            aria-expanded="false" aria-controls="collapseStore7">
+                            <div class="row mb-1 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="store-img border rounded-circle p-1 bg-white me-2">
+                                            <img class="rounded-circle"
+                                                src="../../../assets/img/bookstore/image 412137-5.png">
+                                        </div>
+                                        <div>
+                                            <h5 class="text-secondary">دار سليمان بن عبد الله الميمان للنشر والتوزيع
+                                            </h5>
+                                            <p class="mb-md-0 text-body mb-2">358 كتاب - 106 كاتب</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="text-secondary mb-0 location"> قاعه 1 بلوك 4C </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseStore7">
+                        <div class="p-3">
+                            ...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-bottom p-2">
+                    <div class="position-relative store-main">
+                        <a class="btn text-primary position-absolute top-50 end-0 translate-middle-y save-btn px-3">
+                            <i class="icon-save fs-5"></i>
+                        </a>
+                        <a class="d-block" data-bs-toggle="collapse" href="#collapseStore6" role="button"
+                            aria-expanded="false" aria-controls="collapseStore6">
+                            <div class="row mb-1 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="store-img border rounded-circle p-1 bg-white me-2">
+                                            <img class="rounded-circle"
+                                                src="../../../assets/img/bookstore/image 412137-6.png">
+                                        </div>
+                                        <div>
+                                            <h5 class="text-secondary">دار العلا للنشر والتوزيع</h5>
+                                            <p class="mb-md-0 text-body mb-2">174 كتاب - 78 كاتب</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="text-secondary mb-0 location"> قاعه 3 بلوك 4G </h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseStore6">
+                        <div class="p-3">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <!-- END OTHER STORES -->
+
+            </div>
+
+            <div class="text-center pb-5">
+                <a class="d-inline-block btn btn-primary text-white">
+                    أظهر المزيد
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <i class="icon-done text-primary display-3 mx-auto d-inline-block fw-normal overflow-visible lh-base"></i>
+          <p class="text-secondary">
+            تمت إضافة (اسم مكتبة) إلى <a class="link">قائمة المكتبات</a> الخاصة بك ، يمكنك التحقق من القائمة من ملفك الشخصي على حساب معرض القاهرة للكتاب
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn text-secondary px-3" data-bs-dismiss="modal">الملف الشخصي</button>
+          <button type="button" class="btn btn-secondary px-3">تصفح دور النشر</button>
+        </div>
+      </div>
+    </div>
+  </div>

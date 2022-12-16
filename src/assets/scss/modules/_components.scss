@@ -76,6 +76,9 @@
 .icon-play:before {
   content: "\55";
 }
+.icon-filter:before {
+  content: "\61";
+}
 
 /****  floating-Lable style start ****/
 
@@ -225,7 +228,7 @@
 
 //btn group
 
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active {
+.btn-check:checked + .btn {
   background-color: #FCEEEC;
   border-color: #F2DDDA;
 }
@@ -240,4 +243,15 @@
         }
       }
     }
+  }
+  .list-style{
+    li{
+      background-image: url("../../../assets/img/arrow.svg");
+      background-position: right 9px;
+      background-repeat: no-repeat;
+      padding-right: 1.25rem;
+    }
+  }
+  .ltr{
+    direction: ltr;
   }
