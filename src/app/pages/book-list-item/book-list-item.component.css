@@ -1,0 +1,25 @@
+.book-img-container {
+  background-color: #f0f1f9;
+  height: 312px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.book-img-container .book-img {
+  z-index: 1;
+}
+
+.book-img-container .book-bg {
+  mix-blend-mode: normal;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.book-list-item {
+  cursor: pointer;
+}
+
+.book-list-item:hover .book-img-container {
+  background-color: #252A26;
+}
+/*# sourceMappingURL=book-list-item.component.css.map */

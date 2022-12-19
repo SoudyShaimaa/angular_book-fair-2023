@@ -1,1 +1,5 @@
-/* No CSS *//*# sourceMappingURL=book-list-related.component.css.map */
+.book-item {
+  width: 216px;
+  min-width: 216px;
+}
+/*# sourceMappingURL=book-list-related.component.css.map */

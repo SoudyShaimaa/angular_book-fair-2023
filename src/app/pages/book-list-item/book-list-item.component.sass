@@ -1,0 +1,25 @@
+@import "../../../assets/bootstrap/scss/functions"
+@import "../../../assets/scss/base/_customBootstrapVariables"
+@import "../../../assets/bootstrap/scss/variables"
+@import "../../../assets/bootstrap/scss/mixins"
+
+    
+.book-img-container
+    background-color: #f0f1f9
+    height: 312px
+    -webkit-transition: all 0.5s ease
+    transition: all 0.5s ease
+    .book-img
+        z-index: 1
+
+    .book-bg
+        mix-blend-mode: normal
+        filter: blur(10px)
+
+    
+        
+.book-list-item
+    cursor: pointer
+    &:hover
+        .book-img-container   
+            background-color: $secondary

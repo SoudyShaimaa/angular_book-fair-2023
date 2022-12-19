@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,KAAK;CAAG",
     "sources": [
         "book-list-related.component.sass"
     ],

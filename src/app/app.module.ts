@@ -17,6 +17,11 @@ import { HeaderBannerComponent } from './pages/header-banner/header-banner.compo
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { BookstoreListingComponent } from './pages/bookstore-listing/bookstore-listing.component';
+import { ForgerPasswordComponent } from './pages/forger-password/forger-password.component';
+import { NewPasswordComponent } from './pages/new-password/new-password.component';
+import { ForgetPasswordConfirmationComponent } from './pages/forget-password-confirmation/forget-password-confirmation.component';
+import { BookstoreDetailsComponent } from './pages/bookstore-details/bookstore-details.component';
+import { BookListItemComponent } from './pages/book-list-item/book-list-item.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +40,11 @@ import { BookstoreListingComponent } from './pages/bookstore-listing/bookstore-l
     SigninComponent,
     SignupComponent,
     BookstoreListingComponent,
+    ForgerPasswordComponent,
+    NewPasswordComponent,
+    ForgetPasswordConfirmationComponent,
+    BookstoreDetailsComponent,
+    BookListItemComponent,
     
   ],
   imports: [
