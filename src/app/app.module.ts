@@ -22,6 +22,10 @@ import { NewPasswordComponent } from './pages/new-password/new-password.componen
 import { ForgetPasswordConfirmationComponent } from './pages/forget-password-confirmation/forget-password-confirmation.component';
 import { BookstoreDetailsComponent } from './pages/bookstore-details/bookstore-details.component';
 import { BookListItemComponent } from './pages/book-list-item/book-list-item.component';
+import { NoDateComponent } from './pages/no-date/no-date.component';
+import { SearchResultComponent } from './pages/search-result/search-result.component';
+import { VisitorsComponent } from './pages/visitors/visitors.component';
+import { EventsListingComponent } from './pages/events-listing/events-listing.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +49,10 @@ import { BookListItemComponent } from './pages/book-list-item/book-list-item.com
     ForgetPasswordConfirmationComponent,
     BookstoreDetailsComponent,
     BookListItemComponent,
+    NoDateComponent,
+    SearchResultComponent,
+    VisitorsComponent,
+    EventsListingComponent,
     
   ],
   imports: [

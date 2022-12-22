@@ -1,0 +1,35 @@
+@import "../../../assets/bootstrap/scss/functions"
+@import "../../../assets/scss/base/_customBootstrapVariables"
+@import "../../../assets/bootstrap/scss/variables"
+@import "../../../assets/bootstrap/scss/mixins"
+
+.visitors-hero
+    @include media-breakpoint-down(md)
+    margin-top: -6rem
+    @include media-breakpoint-up(md)
+        width: 532px
+        height: 493px
+    img
+        mix-blend-mode: multiply
+        @include media-breakpoint-up(md)
+            z-index: -1
+            top: -5rem
+            height: 493px
+            min-width: 532px
+            position: absolute
+            right: 50%
+
+.shadow-custom
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05)
+
+.map-address
+    max-width: 400px
+    .map-icon
+        width: 24px
+
+.visitors-hero-text
+    @include media-breakpoint-up(md)
+        max-width: 460px
+
+    .btn-primary
+        z-index: 1

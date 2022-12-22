@@ -1,0 +1,49 @@
+.visitors-hero {
+  margin-top: -6rem;
+}
+
+@media (min-width: 768px) {
+  .visitors-hero {
+    width: 532px;
+    height: 493px;
+  }
+}
+
+.visitors-hero img {
+  mix-blend-mode: multiply;
+}
+
+@media (min-width: 768px) {
+  .visitors-hero img {
+    z-index: -1;
+    top: -5rem;
+    height: 493px;
+    min-width: 532px;
+    position: absolute;
+    right: 50%;
+  }
+}
+
+.shadow-custom {
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.map-address {
+  max-width: 400px;
+}
+
+.map-address .map-icon {
+  width: 24px;
+}
+
+@media (min-width: 768px) {
+  .visitors-hero-text {
+    max-width: 460px;
+  }
+}
+
+.visitors-hero-text .btn-primary {
+  z-index: 1;
+}
+/*# sourceMappingURL=visitors.component.css.map */

@@ -1,0 +1,74 @@
+.event-summary .arrow {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  opacity: 1;
+}
+
+.event-summary.collapsed .arrow {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  opacity: 0;
+}
+
+.event-thumb {
+  width: 215px;
+  height: 125px;
+}
+
+@media (max-width: 991.98px) {
+  .event-thumb {
+    width: 145px;
+    height: 83px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .event-thumb {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.event-thumb:empty {
+  height: 0;
+}
+
+.event-thumb img {
+  min-height: 100%;
+  min-width: 100%;
+  max-width: none !important;
+  width: 100%;
+}
+
+.group-event::before, .group-event::after {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  background: #EAEBF4;
+  top: 0;
+}
+
+.group-event::before {
+  right: 0;
+}
+
+.group-event::after {
+  left: 0;
+}
+
+.group-event .row:last-child {
+  border-bottom-width: 0 !important;
+}
+
+@media (max-width: 767.98px) {
+  .thumb-parent {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=events-listing.component.css.map */

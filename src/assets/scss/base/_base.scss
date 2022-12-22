@@ -36,25 +36,23 @@ a{
  *  STYLE 3
  */
 
-::-webkit-scrollbar-track
- {
-     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-     background-color: #F5F5F5;
- }
+// ::-webkit-scrollbar-track
+//  {
+//      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+//      background-color: #F5F5F5;
+//  }
  
-::-webkit-scrollbar
- {
-     width: 8px;
-     background-color: #F5F5F5;
- }
+// ::-webkit-scrollbar
+//  {
+//      width: 8px;
+//      background-color: #F5F5F5;
+//  }
  
-::-webkit-scrollbar-thumb
- {
-     background-color: #252A26;
- }
- .bg-primary-light{
-     background-color: rgba(209, 0, 44, 0.09);
- }
+// ::-webkit-scrollbar-thumb
+//  {
+//      background-color: #252A26;
+//  }
+
 ol{
     ::marker{
         color: #252A26 !important;

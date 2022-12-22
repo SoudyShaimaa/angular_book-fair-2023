@@ -5,6 +5,12 @@
   transition: all 0.5s ease;
 }
 
+@media (max-width: 767.98px) {
+  .book-img-container {
+    height: 220px;
+  }
+}
+
 .book-img-container .book-img {
   z-index: 1;
 }
@@ -17,6 +23,17 @@
 
 .book-list-item {
   cursor: pointer;
+  cursor--webkit-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0);
+}
+
+.book-list-item:hover {
+  border-bottom-color: #252A26 !important;
+  -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .book-list-item:hover .book-img-container {
